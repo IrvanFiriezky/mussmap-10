@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "03611c6c5d1e2545dd1b476977cabc8e",
+    "content-hash": "8e6e7fe5fd9d19060838a2fee2857ca4",
     "packages": [
         {
             "name": "brick/math",
@@ -2995,66 +2995,6 @@
             "time": "2023-04-15T23:01:58+00:00"
         },
         {
-            "name": "spatie/laravel-package-tools",
-            "version": "1.15.0",
-            "source": {
-                "type": "git",
-                "url": "https://github.com/spatie/laravel-package-tools.git",
-                "reference": "efab1844b8826443135201c4443690f032c3d533"
-            },
-            "dist": {
-                "type": "zip",
-                "url": "https://api.github.com/repos/spatie/laravel-package-tools/zipball/efab1844b8826443135201c4443690f032c3d533",
-                "reference": "efab1844b8826443135201c4443690f032c3d533",
-                "shasum": ""
-            },
-            "require": {
-                "illuminate/contracts": "^9.28|^10.0",
-                "php": "^8.0"
-            },
-            "require-dev": {
-                "mockery/mockery": "^1.5",
-                "orchestra/testbench": "^7.7|^8.0",
-                "pestphp/pest": "^1.22",
-                "phpunit/phpunit": "^9.5.24",
-                "spatie/pest-plugin-test-time": "^1.1"
-            },
-            "type": "library",
-            "autoload": {
-                "psr-4": {
-                    "Spatie\\LaravelPackageTools\\": "src"
-                }
-            },
-            "notification-url": "https://packagist.org/downloads/",
-            "license": [
-                "MIT"
-            ],
-            "authors": [
-                {
-                    "name": "Freek Van der Herten",
-                    "email": "freek@spatie.be",
-                    "role": "Developer"
-                }
-            ],
-            "description": "Tools for creating Laravel packages",
-            "homepage": "https://github.com/spatie/laravel-package-tools",
-            "keywords": [
-                "laravel-package-tools",
-                "spatie"
-            ],
-            "support": {
-                "issues": "https://github.com/spatie/laravel-package-tools/issues",
-                "source": "https://github.com/spatie/laravel-package-tools/tree/1.15.0"
-            },
-            "funding": [
-                {
-                    "url": "https://github.com/spatie",
-                    "type": "github"
-                }
-            ],
-            "time": "2023-04-27T08:09:01+00:00"
-        },
-        {
             "name": "symfony/console",
             "version": "v6.2.10",
             "source": {
@@ -5301,75 +5241,6 @@
                 "source": "https://github.com/tijsverkoyen/CssToInlineStyles/tree/2.2.6"
             },
             "time": "2023-01-03T09:29:04+00:00"
-        },
-        {
-            "name": "tonysm/tailwindcss-laravel",
-            "version": "0.10.1",
-            "source": {
-                "type": "git",
-                "url": "https://github.com/tonysm/tailwindcss-laravel.git",
-                "reference": "b48c26785cbd02ef6f412f6f76005d28db9b87f3"
-            },
-            "dist": {
-                "type": "zip",
-                "url": "https://api.github.com/repos/tonysm/tailwindcss-laravel/zipball/b48c26785cbd02ef6f412f6f76005d28db9b87f3",
-                "reference": "b48c26785cbd02ef6f412f6f76005d28db9b87f3",
-                "shasum": ""
-            },
-            "require": {
-                "illuminate/contracts": "^8.73|^9.0|^10.0",
-                "php": "^8.0",
-                "spatie/laravel-package-tools": "^1.9.2"
-            },
-            "require-dev": {
-                "nunomaduro/collision": "^5.10|^6.0",
-                "orchestra/testbench": "^6.25|^7.0|^8.0",
-                "phpunit/phpunit": "^9.5"
-            },
-            "type": "library",
-            "extra": {
-                "laravel": {
-                    "providers": [
-                        "Tonysm\\TailwindCss\\TailwindCssServiceProvider"
-                    ]
-                }
-            },
-            "autoload": {
-                "files": [
-                    "src/helpers.php"
-                ],
-                "psr-4": {
-                    "Tonysm\\TailwindCss\\": "src"
-                }
-            },
-            "notification-url": "https://packagist.org/downloads/",
-            "license": [
-                "MIT"
-            ],
-            "authors": [
-                {
-                    "name": "Tony Messias",
-                    "email": "tonysm@hey.com",
-                    "role": "Developer"
-                }
-            ],
-            "description": "This package wraps up the standalone executable version of the Tailwind CSS framework.",
-            "homepage": "https://github.com/tonysm/tailwindcss-laravel",
-            "keywords": [
-                "laravel",
-                "tailwindcss"
-            ],
-            "support": {
-                "issues": "https://github.com/tonysm/tailwindcss-laravel/issues",
-                "source": "https://github.com/tonysm/tailwindcss-laravel/tree/0.10.1"
-            },
-            "funding": [
-                {
-                    "url": "https://github.com/tonysm",
-                    "type": "github"
-                }
-            ],
-            "time": "2023-05-13T16:17:24+00:00"
         },
         {
             "name": "vlucas/phpdotenv",
