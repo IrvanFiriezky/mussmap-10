@@ -9,5 +9,3 @@ import {
   } from "tw-elements";
   
   initTE({ Input, Ripple });
-
-  // new commit kocak
