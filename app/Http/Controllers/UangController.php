@@ -40,11 +40,11 @@ class UangController extends Controller
 
         //
         $request->validate([
-            'bulan' => 'required',
-            'jumlah_uang_user' => 'required'
+            'bulan' => 'required|unique:uang_saku_user',
+            'jumlah_uang_user' => 'required|max:9'
         ], [
             'bulan.required' => 'Bulan wajib di isi',
-            'jumlah_uang_user' => 'Jumlah Uang wajib diisi'
+            'jumlah_uang_user' => 'Jumlah Uang wajib diisi dan Maksimal 9 Karakter'
         ]);
         
         

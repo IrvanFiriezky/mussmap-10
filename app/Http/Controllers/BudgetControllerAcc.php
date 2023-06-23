@@ -15,18 +15,33 @@ class BudgetControllerAcc extends Controller
     }
 
     public function hitung(Request $request){
+
+        $request->validate([
+            'price' => 'numeric|max:100000000',
+            'uang_saku' => 'numeric|max:100000000'
+        ], [
+            'price.numeric' => 'Field harga harus berupa angka.',
+            'price.max' => 'Maksimal harga adalah 100.000.000.',
+            'uang_saku.numeric' => 'Field uang saku harus berupa angka.',
+            'uang_saku.max' => 'Maksimal uang saku adalah 100.000.000.'
+        ]);
         
+        try{
         // Input nilai uang saku
         $uang_saku = $_POST['uang_saku'];
 
         // Pilihan uang saku yang akan disimpan
         $pilihan_simpan = $_POST['pilihan_simpan'];
-        if($pilihan_simpan == '10'){
+        if (empty($pilihan_simpan)) {
+            $simpan = 0; // Jika pilihan_simpan tidak dipilih, set simpan ke 0
+        } elseif ($pilihan_simpan == '10') {
             $simpan = $uang_saku * 0.1;
         } elseif ($pilihan_simpan == '20') {
             $simpan = $uang_saku * 0.2;
         } elseif ($pilihan_simpan == '30') {
             $simpan = $uang_saku * 0.3;
+        } else {
+            throw new \Exception('Pilihan simpan tidak valid.'); // Melempar exception jika pilihan tidak valid
         }
 
         // sisa uang
@@ -87,6 +102,9 @@ class BudgetControllerAcc extends Controller
 
         return view('uang.hasillAcc')->with(compact('uang_saku', 'simpan', 'selected_expenses'));
         
+    } catch (\Exception $e) {
+        return back()->with('error', $e->getMessage()); // Kembali ke halaman sebelumnya dengan pesan kesalahan
+        }
 
 
         }

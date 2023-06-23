@@ -2,7 +2,7 @@
     <div class="w-screen p-24 md:flex md:items-center md:justify-between">
         <div class="flex flex-col">
             <h1 class="font-bold text-2xl text-white">MUSSMAP</h1>
-            <span class="text-sm text-gray-500 sm:text-center dark:text-gray-400">© 2023 <a href="https://flowbite.com/"
+            <span class="text-sm text-gray-500 sm:text-center dark:text-gray-400">© 2023 <a
                     class="hover:underline">MUSSMAP™</a>. All Rights Reserved.
             </span>
         </div>

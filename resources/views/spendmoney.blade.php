@@ -16,7 +16,7 @@
 
 			<div class="flex flex-col lg:flex-row">
 				<label for="uang_saku" class="text-1xl mt-5 font-bold text-white">Uang Saku</label>
-				<input class="lg:ml-20 mt-10 bg-kolom rounded-md border-2 border-white" type="text" name="uang_saku"
+				<input class="lg:ml-20 mt-10 bg-kolom rounded-md border-2 border-white" type="number" name="uang_saku"
 					id="uang_saku"><br><br>
 			</div>
 
@@ -36,31 +36,31 @@
 
 			<div class="flex flex-col lg:flex-row py-5">
 				<label for="makanan" class="text-1xl font-bold text-white">Harga Makanan</label>
-				<input class="rounded-md  bg-kolom border-2 border-white lg:ml-10" type="text" name="makanan"
+				<input class="rounded-md  bg-kolom border-2 border-white lg:ml-10" type="number" name="makanan"
 					id="makanan"><br><br>
 			</div>
 
 			<div class="flex flex-col lg:flex-row py-5">
 				<label for="transportasi" class="text-1xl font-bold text-white">Harga Transportasi</label>
-				<input class="rounded-md bg-kolom border-2 border-white lg:ml-5" type="text" name="transportasi"
+				<input class="rounded-md bg-kolom border-2 border-white lg:ml-5" type="number" name="transportasi"
 					id="transportasi"><br><br>
 			</div>
 
 			<div class="flex flex-col lg:flex-row py-5">
 				<label for="hiburan" class="text-1xl font-bold text-white">Harga Hiburan</label>
-				<input class="rounded-md bg-kolom border-2 border-white lg:ml-12" type="text" name="hiburan"
+				<input class="rounded-md bg-kolom border-2 border-white lg:ml-12" type="number" name="hiburan"
 					id="hiburan"><br><br>
 			</div>
 
 			<div class="flex flex-col lg:flex-row py-5">
 				<label for="pulsa" class="text-1xl font-bold text-white">Harga Pulsa</label>
-				<input class="rounded-md bg-kolom border-2 border-white lg:ml-16" type="text" name="pulsa"
+				<input class="rounded-md bg-kolom border-2 border-white lg:ml-16" type="number" name="pulsa"
 					id="pulsa"><br><br>
 			</div>
 
 			<div class="flex flex-col lg:flex-row py-5">
 				<label for="kebutuhan_pokok" class="text-1xl font-bold text-white">Kebutuhan Pokok</label>
-				<input class="rounded-md bg-kolom border-2 border-white lg:ml-6" type="text" name="kebutuhan_pokok"
+				<input class="rounded-md bg-kolom border-2 border-white lg:ml-6" type="number" name="kebutuhan_pokok"
 					id="kebutuhan_pokok"><br><br>
 			</div>
 
@@ -84,7 +84,7 @@
 			<div class="flex flex-col">
 				<h1 class="font-bold text-2xl text-white">MUSSMAP</h1>
 				<span class="text-sm text-gray-500 sm:text-center dark:text-gray-400">© 2023 <a
-						href="https://flowbite.com/" class="hover:underline">MUSSMAP™</a>. All Rights Reserved.
+						class="hover:underline">MUSSMAP™</a>. All Rights Reserved.
 				</span>
 			</div>
 			<ul class="flex flex-wrap items-center mt-3 text-sm font-medium text-gray-500 dark:text-gray-400 sm:mt-0">
