@@ -38,9 +38,10 @@ class UangController extends Controller
         Session::flash('bulan',$request->bulan);
         Session::flash('jumlah_uang_user',$request->jumlah_uang);
 
+        
         //
         $request->validate([
-            'bulan' => 'required|unique:uang_saku_user',
+            'bulan' => 'required|unique:uang_saku_user,bulan,NULL,id,id_user,'. auth()->id(),
             'jumlah_uang_user' => 'required|max:9'
         ], [
             'bulan.required' => 'Bulan wajib di isi',

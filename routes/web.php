@@ -23,7 +23,7 @@ use App\Http\Controllers\LoginController;
 
 Route::get('/sesi', [LoginController::class, 'index'])->middleware('isTamu');
 Route::post('/sesi/login', [LoginController::class, 'login'])->middleware('isTamu');
-Route::get('/sesi/logout', [LoginController::class, 'logout']);
+Route::get('/logout', [LoginController::class, 'logout']);
 
 Route::get('/sesi/register', [LoginController::class, 'register']);
 Route::post('/sesi/create', [LoginController::class, 'create'])->middleware('isTamu');

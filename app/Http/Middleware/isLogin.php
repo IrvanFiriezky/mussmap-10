@@ -21,6 +21,6 @@ class isLogin
             return $next($request);
         }
 
-        return redirect('sesi')->withErros('silahkan login terlebih dahulu');
+        return redirect('/sesi')->withErros('silahkan login terlebih dahulu');
     }
 }
